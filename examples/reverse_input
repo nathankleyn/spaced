@@ -1,0 +1,8 @@
+@ # Turn off whitespace mode.
+* # Start a loop.
+>& # Move the cell pointer right and fill it with a character.
+^ # Continue this until we reach the end of the data, eg. EOF, which is 0 (null).
+< # Move left so we don't print the EOF we stored.
+* # Start a loop.
+"< # Print the char at the current cell and move right.
+^ # Continue until we reach cell 0, which is set to 0.
